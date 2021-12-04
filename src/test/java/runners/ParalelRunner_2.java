@@ -6,12 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions (
-        plugin={"html:target\\cucumber-reports.html",
-                "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml"},
+        plugin={"html:target\\Pcucumber-reports2.html",
+                "json:target/json-reports/Pcucumber2.json",
+                "junit:target/xml-report/Pcucumber2.xml"},
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@Rpr" ,
+        tags = "@Paralel2" ,
 
         dryRun= false
         // dryRun=false yaparsak testi calistirir, eksik bir adimla karsilasirsa
@@ -21,5 +21,5 @@ import org.junit.runner.RunWith;
 
 
 
-public class Runner {
+public class ParalelRunner_2 {
 }
